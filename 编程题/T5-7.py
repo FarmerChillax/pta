@@ -1,0 +1,7 @@
+input_str = eval(input())
+temp = list(set(input_str))
+temp.sort(key = input_str.index)
+print(' '.join(list(map(str, temp))))
+# input_str = input().replace("[", "").replace("]", '').replace(' ','').split(',')
+# temp = list(set(input_str)).sort(Key = input_str)
+# print(temp)
