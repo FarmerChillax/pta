@@ -3,6 +3,7 @@
 int main(){
     int n, m;
     scanf("%d %d", &m, &n);
+
     int matrix[n][n];
 
     for(int i=0; i < n; i++){
