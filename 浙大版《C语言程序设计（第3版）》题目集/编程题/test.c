@@ -2,33 +2,27 @@
 
 int main(int argc, char const *argv[])
 {
-	int n = 0;
-	scanf("%d", &n);
-	int row = (n / 2) + 1;
-	for (int i = 1; i <= row; i++)
+	printf("start...\n");
+	// int *p=NULL;
+	// int x = 233;
+	// p = &x;
+	// printf("%p -> %d\n", x, x);
+	// printf("%p -> %d\n", p, *p);
+	// printf("%p %p\n", p, &x);
+	char str[] = {'a', 'b', 'c', 'd', 'e', 'f'};
+	char nums[] = {'0', '1', '2', '3', '4', '5'};
+	for (int i = 0; i < 6; i++)
 	{
-		for (int j = row - i; j > 0; j--)
-		{
-			printf("  ");
-		}
-		for (int j = 0; j < (2 * i - 1); j++)
-		{
-			printf("* ");
-		}
-		printf("\n");
+		printf("%c -> %d\n", str[i], str[i]);
 	}
-	for (int i = 1; i < row; i++)
+	
+	// printf("%c -> %d\n", 10, 10);
+	for (int i = 0; i < 6; i++)
 	{
-		for (int j = 0; j < i; j++)
-		{
-			printf("  ");
-		}
-		for (int j = (row - i) * 2 - 1; j > 0; j--)
-		{
-			printf("* ");
-		}
-		printf("\n");
+		printf("%c -> %d\n", nums[i], nums[i]);
 	}
+	printf("", 'a');
+
 
 	return 0;
 }
