@@ -3,6 +3,12 @@
 int main(int argc, char const *argv[])
 {
 	printf("start...\n");
+	printf("%d\n", argc);
+	for (int i = 0; i < argc; i++)
+	{
+		printf("%s\n", argv[i]);
+	}
+	
 	// int *p=NULL;
 	// int x = 233;
 	// p = &x;
@@ -22,9 +28,9 @@ int main(int argc, char const *argv[])
 	// 	printf("%c -> %d\n", nums[i], nums[i]);
 	// }
 	// printf("", 'a');
-	char x = 'a', y = 'b';
+	// char x = 'a', y = 'b';
 
-	printf("%d\n", (x - 'a' + 10) + (y - 'a' + 10 ));
+	// printf("%d\n", (x - 'a' + 10) + (y - 'a' + 10 ));
 
 	return 0;
 }
