@@ -3,11 +3,11 @@
 int main(int argc, char const *argv[])
 {
 	printf("start...\n");
-	printf("%d\n", argc);
-	for (int i = 0; i < argc; i++)
-	{
-		printf("%s\n", argv[i]);
-	}
+	// printf("%d\n", argc);
+	// for (int i = 0; i < argc; i++)
+	// {
+	// 	printf("%s\n", argv[i]);
+	// }
 	
 	// int *p=NULL;
 	// int x = 233;
@@ -31,6 +31,15 @@ int main(int argc, char const *argv[])
 	// char x = 'a', y = 'b';
 
 	// printf("%d\n", (x - 'a' + 10) + (y - 'a' + 10 ));
-
+	int i, m=7;
+	char a[20] = "happy new year", b[20];
+	char *a_point = a;
+	a_point += m;
+	for (i = 0; *a_point; i++, a_point++)
+	{
+		b[i] = *a_point;
+	}
+	b[i] = '\0';
+	printf("%s\n", b);
 	return 0;
 }
