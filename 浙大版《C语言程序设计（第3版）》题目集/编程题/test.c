@@ -9,20 +9,22 @@ int main(int argc, char const *argv[])
 	// printf("%p -> %d\n", x, x);
 	// printf("%p -> %d\n", p, *p);
 	// printf("%p %p\n", p, &x);
-	char str[] = {'a', 'b', 'c', 'd', 'e', 'f'};
-	char nums[] = {'0', '1', '2', '3', '4', '5'};
-	for (int i = 0; i < 6; i++)
-	{
-		printf("%c -> %d\n", str[i], str[i]);
-	}
+	// char str[] = {'a', 'b', 'c', 'd', 'e', 'f'};
+	// char nums[] = {'0', '1', '2', '3', '4', '5'};
+	// for (int i = 0; i < 6; i++)
+	// {
+	// 	printf("%c -> %d\n", str[i], str[i]);
+	// }
 	
-	// printf("%c -> %d\n", 10, 10);
-	for (int i = 0; i < 6; i++)
-	{
-		printf("%c -> %d\n", nums[i], nums[i]);
-	}
-	printf("", 'a');
+	// // printf("%c -> %d\n", 10, 10);
+	// for (int i = 0; i < 6; i++)
+	// {
+	// 	printf("%c -> %d\n", nums[i], nums[i]);
+	// }
+	// printf("", 'a');
+	char x = 'a', y = 'b';
 
+	printf("%d\n", (x - 'a' + 10) + (y - 'a' + 10 ));
 
 	return 0;
 }

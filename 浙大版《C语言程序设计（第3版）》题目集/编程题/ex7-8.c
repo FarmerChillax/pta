@@ -3,45 +3,49 @@
 
 int main(int argc, char const *argv[])
 {
-    int cnt = 0, sig = 1, sum = 0;
+    int cnt = 0, sig = 1, sum = 0, flag=1; // 默认正数
     char str[80], ch;
 
     while ((ch = getchar()) != '#')
     {
-        if (ch == '-' and sig)
+
+        if (ch == '-' and sig == 1)
         {
             sig = 0;
+            flag = 0;
         }
-        if (ch >= '0' and ch <= '9')
+        if (ch >= '0' and ch <= '9') 
         {
             sig = 0;
             str[cnt] = ch - '0';
             cnt++;
-        }else if (ch >= 'A' and ch <= 'F'){
-            str[cnt] = ch - 7 - '0';
+        }else if (ch >= 'A' and ch <= 'F')
+        {
+            sig = 0;
+            str[cnt] = ch - 'A' + 10;
             cnt++;
+
         }else if (ch >= 'a' and ch <= 'f')
         {
-            str[cnt] = ch - 39 -'0';
+            sig = 0;
+            str[cnt] = ch - 'a' + 10;
             cnt++;
         }
     }
 
-    // 16 -> 10
-
-    for(int i=0;i<cnt;i++){
-        //printf("%d ",n[i]);
-        sum+=str[i]*pow(16,cnt-i-1);
+    for (int i = 0; i < cnt; i++)
+    {
+        // printf("%d", str[i]);
+        sum += str[i] * pow(16.00, cnt - 1 -i);
     }
 
-    if (sig)
+    if (flag)
     {
         printf("%d", sum);
     }else
     {
         printf("%d", sum * -1);
     }
-
 
     return 0;
 }
