@@ -31,15 +31,17 @@ int main(int argc, char const *argv[])
 	// char x = 'a', y = 'b';
 
 	// printf("%d\n", (x - 'a' + 10) + (y - 'a' + 10 ));
-	int i, m=7;
-	char a[20] = "happy new year", b[20];
-	char *a_point = a;
-	a_point += m;
-	for (i = 0; *a_point; i++, a_point++)
-	{
-		b[i] = *a_point;
-	}
-	b[i] = '\0';
-	printf("%s\n", b);
+	// int i, m=7;
+	// char a[20] = "happy new year", b[20];
+	// char *a_point = a;
+	// a_point += m;
+	// for (i = 0; *a_point; i++, a_point++)
+	// {
+	// 	b[i] = *a_point;
+	// }
+	// b[i] = '\0';
+	// printf("%s\n", b);
+	printf("%d\n", 5 * sizeof(int));
+	// printf("%.2f\n", 3);
 	return 0;
 }
