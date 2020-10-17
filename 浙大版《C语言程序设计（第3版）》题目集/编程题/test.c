@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
 	// {
 	// 	printf("%s\n", argv[i]);
 	// }
-	
+
 	// int *p=NULL;
 	// int x = 233;
 	// p = &x;
@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 	// {
 	// 	printf("%c -> %d\n", str[i], str[i]);
 	// }
-	
+
 	// // printf("%c -> %d\n", 10, 10);
 	// for (int i = 0; i < 6; i++)
 	// {
@@ -41,7 +41,21 @@ int main(int argc, char const *argv[])
 	// }
 	// b[i] = '\0';
 	// printf("%s\n", b);
-	printf("%d\n", 5 * sizeof(int));
+	// printf("%d\n", 5 * sizeof(int));
 	// printf("%.2f\n", 3);
+// int i,x,y;	
+// i=x=y=0;
+// do {
+// 	++i;
+// 	if ( i%2 ) 
+// 		x+=i, 
+// 	i++;
+// 	y +=i++;
+// } while ( i<=7 );
+// printf("%d %d %d", i, x, y);
+	int a[] = {0,1,2,3,4,5,6,7,8,9};
+	int *p=a, i = 5;
+
+	printf("%d\n",p+5);
 	return 0;
 }
